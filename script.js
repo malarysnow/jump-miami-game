@@ -89,6 +89,9 @@ document.addEventListener("keydown", function (event) {
     alert(`Press your spacebar to jump.`);
   }
 });
+//TOCUH JUMP
+
+window.addEventListener('touchstart', jump);
 
 // highScoreTotal = 0;
 // if (){
