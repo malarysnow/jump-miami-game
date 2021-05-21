@@ -91,7 +91,11 @@ document.addEventListener("keydown", function (event) {
 });
 //TOCUH JUMP
 
-window.addEventListener('touchstart', jump);
+window.addEventListener('touchstart', function (){
+    jump();
+    jumps++;
+    currentJumps.textContent = jumps;
+};
 
 // highScoreTotal = 0;
 // if (){
