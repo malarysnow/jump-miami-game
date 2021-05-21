@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump, Miami The Unicorn!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- JUMP, MIAMI THE UNICORN -->
+    <div class= "intro">
+        <h1 class = "intro-h">Jump, Miami! Jump!</h1>
+        <p class="intro-p">Meet Miami, the average looking unicorn.🦄 Help her JUMP [spacebar] over the palm trees.</p>
+    </div>
+    <!-- JUMP COUNT & HIGHEST JUMP COUNT -->
+    <section class= "scores">
+    <div class= "jump-count">
+        <p class="txt jump-label">🌈 High Score </p>
+        <p class="txt jump-score">0</p>
+
+    </div>
+    <div class="current-jumps">
+        <p class="txt current-jumps-label">🌴 Jumps </p> 
+        <p class="txt current-jumps-score">0</p>
+      </div>
+    </section>
+    <!-- MADE BY MALARY SNOW -->
+    <div class="credit">
+        <p>✨ Made by Malary Snow ✨</p>
+    </div>
+<!-- GAME BLOCK -->
+    <div class="game"> 
+        <div id= "unicorn"></div>
+        <div id="palm" class = "run-animation"></div>
+    </div>
+
+
+   <!-- GAME OVER WINDOW  -->
+    <div class="game-over-modal hidden">
+        <h1>Wah, wah, waaaah!</h1>
+        <p class= "modalp">Oops. Ya bombed. But give it another go!</p>
+        <button class= "btn btn-large btn-outline-light restart">Go Again!</button>
+
+    </div>
+    <div class= "overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

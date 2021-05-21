@@ -1,0 +1,178 @@
+/*-----GENERAL STYLES-----*/
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: blueviolet;
+}
+
+.modalp {
+  font-size: 0.8rem;
+  color: #907c67;
+}
+
+p {
+  font-size: 0.5rem;
+  color: #907c67;
+}
+
+body {
+  font-family: "Press Start 2p";
+  position: relative;
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.btn:hover {
+  color: white;
+  background-color: blueviolet;
+}
+.intro-p {
+  color: white;
+  font-size: 0.6rem;
+}
+.intro {
+  position: fixed;
+  display: block;
+  background-color: violet;
+  padding: 2rem;
+  margin: auto;
+}
+.intro-h {
+  font-size: 1.5rem;
+}
+/*-----MAIN GAME PIECES-----*/
+.game {
+  width: 600px;
+  height: 210px;
+  display: block;
+  background-color: white;
+  border: 1px solid violet;
+  margin: auto;
+  margin-top: 12rem;
+}
+
+#unicorn {
+  width: 80px;
+  height: 80px;
+  background-image: url(images/unicorn.png);
+  background-size: 80px 80px;
+
+  position: relative;
+  top: 120px;
+}
+
+#palm {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 90px;
+  left: 600px;
+
+  background-image: url(images/palm.png);
+  background-size: 30px 30px;
+}
+
+.run-animation {
+  animation: block 1.5s infinite linear;
+}
+
+/*-----MODAL GAME OVER WINDOW-----*/
+.hidden {
+  display: none;
+}
+.game-over-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: #fec75b;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+/*-----SCORES & FOOTER INFO-----*/
+.jump-count {
+  position: absolute;
+  margin-top: 31rem;
+  margin-left: 70%;
+  width: 100%;
+  background-color: violet;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.txt {
+  color: white;
+}
+.current-jumps {
+  position: absolute;
+  margin-top: 26rem;
+  margin-left: 70%;
+  width: 100%;
+  background-color: #c1d484;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.credit {
+  position: absolute;
+  margin-top: 38rem;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/*-----OVERLAY-----*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 192, 137, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/*-----ANIMATIONS-----*/
+.jump {
+  animation: jump 0.3s linear;
+}
+/*-----KEYFRAMES-----*/
+@keyframes jump {
+  0% {
+    top: 120px;
+  }
+  30% {
+    top: 110px;
+  }
+  50% {
+    top: 60px;
+  }
+
+  80% {
+    top: 110px;
+  }
+
+  100% {
+    top: 120px;
+  }
+}
+
+@keyframes block {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: -20px;
+  }
+}
